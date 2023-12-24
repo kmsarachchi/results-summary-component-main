@@ -1,0 +1,135 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+  display: flex;
+  background-color: white;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
+}
+.left {
+  color: white;
+  padding: 20px;
+  width: 40%;
+  border-radius: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+}
+.score-left {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  padding: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.left h3 {
+  color: hsl(241, 100%, 89%);
+}
+.big-score {
+  font-weight: bold;
+  font-size: 60px;
+}
+.small-score {
+  color: hsl(241, 100%, 89%);
+}
+.left h4,
+.right h4 {
+  font-size: 20px;
+}
+.left-text h4 {
+  font-size: 25px;
+}
+.left-text p {
+  font-size: 15px;
+  padding: 0 10px;
+  color: hsl(241, 100%, 89%);
+}
+.right {
+  padding: 20px;
+  width: 50%;
+}
+.score-con {
+  display: flex;
+}
+.score {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.score-reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+.score-memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+.score-verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+.score-visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+img {
+  margin-right: 10px;
+}
+.black-text {
+  color: black;
+}
+.grey {
+  color: hsl(241, 100%, 89%);
+}
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: none;
+}
+@media (max-width: 375px) {
+  .container {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .left {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 0 0 0;
+  }
+  .right {
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .left-text p {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  .left-text h4 {
+    margin: 0;
+    margin: 10px 0 0 0;
+  }
+}
